@@ -29,7 +29,7 @@ sudo apt install qemu nasm -y
 
 ## Source Code and Command Line List
 
-### 1. boot.asm
+### 1. [boot.asm](boot.asm)
 
 > The BIOS checks that bytes 511 and 512 of the alleged boot sector are bytes 0xAA55.
 
@@ -55,7 +55,7 @@ qemu-system-x86_64 boot.bin
 # VNC server running on 127.0.0.1:5900
 ```
 
-### 2. hello.asm
+### 2. [hello.asm](hello.asm)
 
 ```assembly
 mov ah, 0x0e ; tty mode
@@ -63,7 +63,7 @@ mov al, 'H' ; write character
 int 0x10  ; interrupt for video services
 ```
 
-### 3. memory.asm
+### 3. [memory.asm](memory.asm)
 
 [Writing a Simple Operating System —from Scratch pdf](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf) page 14
 
@@ -88,7 +88,7 @@ mov al, [bx]
 int 0x1
 ```
 
-### 4. memory_org.asm
+### 4. [memory_org.asm](memory_org.asm)
 
 ```assembly
 [org 0x7c00]
@@ -101,3 +101,5 @@ int 0x10
 mov al, [the_secret]
 int 0x105
 ```
+
+### 5. [stack.asm](stack.asm)
