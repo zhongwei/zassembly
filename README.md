@@ -9,7 +9,7 @@ wget https://download.qemu.org/qemu-4.2.0.tar.xz
 tar xvJf qemu-4.2.0.tar.xz
 cd qemu-4.2.0
 ./configure
-make
+make -j4
 sudo make install
 ```
 
