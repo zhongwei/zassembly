@@ -103,3 +103,5 @@ int 0x105
 ```
 
 ### 5. [stack.asm](stack.asm)
+
+![stack address](images/stack.svg)
