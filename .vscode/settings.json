@@ -1,3 +1,19 @@
 {
-    "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline"
+    "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline",
+    "cSpell.words": [
+        "Nasm",
+        "Qemu",
+        "Teamviewer",
+        "autoconf",
+        "binutils",
+        "libboost",
+        "libglib",
+        "libpixman",
+        "libssl",
+        "libtool",
+        "nographic",
+        "popa",
+        "pusha",
+        "virtualenv"
+    ]
 }
