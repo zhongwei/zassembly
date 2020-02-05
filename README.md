@@ -165,3 +165,18 @@ HEX_OUT:
  14   0E  SO   30  1E RS   46  2E  .  62  3E  >  78  4E  N  94  5E  ^  110 6E  n  126 7E  ~
  15   0F  SI   31  1F US   47  2F  /  63  3F  ?  79  4F  O  95  5F  _  111 6F  o  127 7F  DEL
 ```
+
+### 7. [Segmentation](segmentation.asm)
+
+```assembly
+mov bx, 0x7c0 ; remember, the segment is automatically <<4 for you
+mov ds, bx
+; WARNING: from now on all memory references will be offset by 'ds' implicitly
+mov al, [the_secret]
+int 0x10
+; -----------
+mov bx, 0x7c0
+mov es, bx
+mov al, [es:the_secret]
+int 0x10
+```
