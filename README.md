@@ -19,7 +19,7 @@ sudo make install
 ### Install by apt
 
 ```shell
-sudo apt install qemu nasm -y
+sudo apt install qemu qemu-kvm nasm -y
 ```
 
 ## VNC
